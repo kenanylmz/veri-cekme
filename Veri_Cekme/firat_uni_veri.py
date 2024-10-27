@@ -12,7 +12,7 @@ db = firestore.client()
 
 # Google Scholar'dan verileri çekme
 headers = {'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.124 Safari/537.36'}
-akademisyen = requests.get("https://scholar.google.com/citations?hl=tr&user=3EiBtZEAAAAJ", headers=headers)
+akademisyen = requests.get("https://scholar.google.com/citations?hl=tr&user=3EiBtZEAAAAJ", headers=headers) #Tüm akademisyenlerin linkleri...
 time.sleep(3)
 
 soup = BeautifulSoup(akademisyen.content, 'html.parser')
