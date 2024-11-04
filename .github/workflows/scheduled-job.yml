@@ -23,7 +23,7 @@ jobs:
           python -m pip install --upgrade pip
           pip install -r requirements.txt
 
-      - name: Scripti Çaliştir
+      - name: Scripti Çalistir
         run: |
           python firat_uni_veri.py
         env:
