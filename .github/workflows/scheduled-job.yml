@@ -10,7 +10,7 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-      - name: Kodlari Çek
+      - name: Kodları Çek
         uses: actions/checkout@v2
 
       - name: Python Kurulumu
