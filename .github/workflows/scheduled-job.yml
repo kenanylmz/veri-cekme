@@ -2,7 +2,7 @@ name: Scheduled Data Fetch and Update
 
 on:
   schedule:
-    # Her gün saat 00:00'da çalıştır
+    # Bu cron ifadesi "her gün saat 00:00'da" anlamına gelir
     - cron: "0 0 * * *"
 
 jobs:
@@ -23,7 +23,7 @@ jobs:
           python -m pip install --upgrade pip
           pip install -r requirements.txt
 
-      - name: Veri Çekme ve Firebase'e Güncelleme
+      - name: Scripti Çalıştır
         run: |
           python firat_uni_veri.py
         env:
