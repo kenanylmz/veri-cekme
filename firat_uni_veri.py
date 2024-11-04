@@ -6,7 +6,7 @@ import time
 import re
 
 # Firebase ayarları
-cred = credentials.Certificate("C:/Users/Kenan/Downloads/scolar-59dd7-firebase-adminsdk-v3lke-3302e5f125.json")
+cred = credentials.Certificate("firebase_key.json")
 firebase_admin.initialize_app(cred)
 db = firestore.client()
 
