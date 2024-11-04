@@ -2,7 +2,6 @@ name: Scheduled Data Fetch and Update
 
 on:
   schedule:
-    # Her gün saat 00:00'da çalıştır
     - cron: "0 0 * * *"
 
 jobs:
