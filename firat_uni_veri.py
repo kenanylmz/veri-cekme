@@ -19,7 +19,8 @@ hocanin_url_dizisi = [
     "https://scholar.google.com/citations?user=zEd9GiEAAAAJ&hl=tr&oi=ao",
     "https://scholar.google.com/citations?hl=tr&user=HD2HihcAAAAJ",
     "https://scholar.google.com/citations?hl=tr&user=IWlhm-cAAAAJ",
-    "https://scholar.google.com/citations?user=xzef-AYAAAAJ&hl=tr&oi=ao"
+    "https://scholar.google.com/citations?user=xzef-AYAAAAJ&hl=tr&oi=ao",
+    "https://scholar.google.com/citations?hl=tr&user=KIsNWY4AAAAJ"
     # Diğer hocaların URL'lerini buraya ekleyin
 ]
 
