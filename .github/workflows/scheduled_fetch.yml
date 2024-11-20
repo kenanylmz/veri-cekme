@@ -2,8 +2,8 @@ name: Google Scholar Data Fetch and Upload
 
 on:
   schedule:
-    - cron: "0 */10 * * *"  # Her 10 saatte bir çalıştırır
-  workflow_dispatch:         # Elle çalıştırma seçeneği
+    - cron: "0 0 * * 0"  # Her hafta Pazar günü UTC saat 00:00'da çalıştırır
+  workflow_dispatch:  # Manuel olarak elle çalıştırma seçeneği sunar
 
 jobs:
   fetch_and_upload:
