@@ -12,15 +12,19 @@ db = firestore.client()
 
 # Tüm hocaların Google Scholar URL'lerini tutan liste
 hocanin_url_dizisi = [
-    "https://scholar.google.com/citations?hl=tr&user=HV4FNxsAAAAJ",
-    "https://scholar.google.com/citations?hl=tr&user=_RKTpkMAAAAJ",
+    "https://scholar.google.com/citations?hl=tr&user=KIsNWY4AAAAJ",
+    "https://scholar.google.com/citations?hl=tr&user=HD2HihcAAAAJ",
+    "https://scholar.google.com/citations?hl=tr&user=xzef-AYAAAAJ",
     "https://scholar.google.com/citations?hl=tr&user=oqAqSxsAAAAJ",
     "https://scholar.google.com/citations?hl=tr&user=YfDMrjoAAAAJ",
-    "https://scholar.google.com/citations?user=zEd9GiEAAAAJ&hl=tr&oi=ao",
-    "https://scholar.google.com/citations?hl=tr&user=HD2HihcAAAAJ",
+    "https://scholar.google.com/citations?hl=tr&user=lGTBW8AAAAAJ",
+    "https://scholar.google.com/citations?hl=tr&user=_RKTpkMAAAAJ",
+    "https://scholar.google.com/citations?hl=tr&user=ekzy6EUAAAAJ",
+    "https://scholar.google.com/citations?hl=tr&user=slUA7yUAAAAJ",
     "https://scholar.google.com/citations?hl=tr&user=IWlhm-cAAAAJ",
-    "https://scholar.google.com/citations?user=xzef-AYAAAAJ&hl=tr&oi=ao",
-    "https://scholar.google.com/citations?hl=tr&user=KIsNWY4AAAAJ"
+    "https://scholar.google.com/citations?hl=tr&user=HV4FNxsAAAAJ",
+    "https://scholar.google.com/citations?hl=tr&user=MAlfGD8AAAAJ",
+    "https://scholar.google.com/citations?hl=tr&user=zEd9GiEAAAAJ"
     # Diğer hocaların URL'lerini buraya ekleyin
 ]
 
@@ -42,7 +46,7 @@ def veri_cek_ve_yukle(url):
     makale_sayisi = int(re.search(r'\d+$', makale_sayisi_text).group()) if makale_sayisi_text else 0
 
     # Firebase Firestore'a akademisyen bilgilerini ekleme veya güncelleme
-    doc_ref = db.collection("Universiteler1").document("Firat Universitesi").collection("Yazilim Mühendisligi").document(baslik)
+    doc_ref = db.collection("Universiteler").document("Firat Universitesi").collection("Yazilim Mühendisligi").document(baslik)
     existing_data = doc_ref.get()
 
     if existing_data.exists:
